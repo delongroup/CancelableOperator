@@ -14,7 +14,6 @@
 		78ABDD41191B194D003D605F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDD40191B194D003D605F /* main.m */; };
 		78ABDD45191B194D003D605F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDD44191B194D003D605F /* AppDelegate.m */; };
 		78ABDD48191B194D003D605F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ABDD46191B194D003D605F /* Main_iPhone.storyboard */; };
-		78ABDD4B191B194D003D605F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78ABDD49191B194D003D605F /* Main_iPad.storyboard */; };
 		78ABDD4E191B194D003D605F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDD4D191B194D003D605F /* ViewController.m */; };
 		78ABDD50191B194D003D605F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78ABDD4F191B194D003D605F /* Images.xcassets */; };
 		78ABDD57191B194D003D605F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ABDD56191B194D003D605F /* XCTest.framework */; };
@@ -22,6 +21,9 @@
 		78ABDD59191B194D003D605F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ABDD38191B194D003D605F /* UIKit.framework */; };
 		78ABDD61191B194D003D605F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78ABDD5F191B194D003D605F /* InfoPlist.strings */; };
 		78ABDD63191B194D003D605F /* OperatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDD62191B194D003D605F /* OperatorDemoTests.m */; };
+		78F618D2193B114E009DDC1A /* TaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F618CD193B114E009DDC1A /* TaskManager.m */; };
+		78F618D3193B114E009DDC1A /* TaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F618CF193B114E009DDC1A /* TaskOperation.m */; };
+		78F618D4193B114E009DDC1A /* TaskOperationExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F618D1193B114E009DDC1A /* TaskOperationExecutor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,26 +37,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		78ABDD31191B194D003D605F /* OperatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OperatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78ABDD31191B194D003D605F /* CancelableOperator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CancelableOperator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ABDD34191B194D003D605F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78ABDD36191B194D003D605F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		78ABDD38191B194D003D605F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		78ABDD3C191B194D003D605F /* OperatorDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OperatorDemo-Info.plist"; sourceTree = "<group>"; };
+		78ABDD3C191B194D003D605F /* CancelableOperator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CancelableOperator-Info.plist"; sourceTree = "<group>"; };
 		78ABDD3E191B194D003D605F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78ABDD40191B194D003D605F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		78ABDD42191B194D003D605F /* OperatorDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OperatorDemo-Prefix.pch"; sourceTree = "<group>"; };
+		78ABDD42191B194D003D605F /* CancelableOperator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CancelableOperator-Prefix.pch"; sourceTree = "<group>"; };
 		78ABDD43191B194D003D605F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78ABDD44191B194D003D605F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		78ABDD47191B194D003D605F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		78ABDD4A191B194D003D605F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		78ABDD4C191B194D003D605F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		78ABDD4D191B194D003D605F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		78ABDD4F191B194D003D605F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		78ABDD55191B194D003D605F /* OperatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OperatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78ABDD55191B194D003D605F /* CancelableOperatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CancelableOperatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ABDD56191B194D003D605F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		78ABDD5E191B194D003D605F /* OperatorDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OperatorDemoTests-Info.plist"; sourceTree = "<group>"; };
+		78ABDD5E191B194D003D605F /* CancelableOperatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CancelableOperatorTests-Info.plist"; sourceTree = "<group>"; };
 		78ABDD60191B194D003D605F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78ABDD62191B194D003D605F /* OperatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperatorDemoTests.m; sourceTree = "<group>"; };
+		78F618CC193B114E009DDC1A /* TaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManager.h; sourceTree = "<group>"; };
+		78F618CD193B114E009DDC1A /* TaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManager.m; sourceTree = "<group>"; };
+		78F618CE193B114E009DDC1A /* TaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskOperation.h; sourceTree = "<group>"; };
+		78F618CF193B114E009DDC1A /* TaskOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskOperation.m; sourceTree = "<group>"; };
+		78F618D0193B114E009DDC1A /* TaskOperationExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskOperationExecutor.h; sourceTree = "<group>"; };
+		78F618D1193B114E009DDC1A /* TaskOperationExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskOperationExecutor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,8 @@
 		78ABDD32191B194D003D605F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				78ABDD31191B194D003D605F /* OperatorDemo.app */,
-				78ABDD55191B194D003D605F /* OperatorDemoTests.xctest */,
+				78ABDD31191B194D003D605F /* CancelableOperator.app */,
+				78ABDD55191B194D003D605F /* CancelableOperatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,10 +121,10 @@
 		78ABDD3A191B194D003D605F /* OperatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				78F618CB193B114E009DDC1A /* Core */,
 				78ABDD43191B194D003D605F /* AppDelegate.h */,
 				78ABDD44191B194D003D605F /* AppDelegate.m */,
 				78ABDD46191B194D003D605F /* Main_iPhone.storyboard */,
-				78ABDD49191B194D003D605F /* Main_iPad.storyboard */,
 				78ABDD4C191B194D003D605F /* ViewController.h */,
 				78ABDD4D191B194D003D605F /* ViewController.m */,
 				78ABDD4F191B194D003D605F /* Images.xcassets */,
@@ -129,10 +136,10 @@
 		78ABDD3B191B194D003D605F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				78ABDD3C191B194D003D605F /* OperatorDemo-Info.plist */,
+				78ABDD3C191B194D003D605F /* CancelableOperator-Info.plist */,
 				78ABDD3D191B194D003D605F /* InfoPlist.strings */,
 				78ABDD40191B194D003D605F /* main.m */,
-				78ABDD42191B194D003D605F /* OperatorDemo-Prefix.pch */,
+				78ABDD42191B194D003D605F /* CancelableOperator-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -149,18 +156,31 @@
 		78ABDD5D191B194D003D605F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				78ABDD5E191B194D003D605F /* OperatorDemoTests-Info.plist */,
+				78ABDD5E191B194D003D605F /* CancelableOperatorTests-Info.plist */,
 				78ABDD5F191B194D003D605F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		78F618CB193B114E009DDC1A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				78F618CC193B114E009DDC1A /* TaskManager.h */,
+				78F618CD193B114E009DDC1A /* TaskManager.m */,
+				78F618CE193B114E009DDC1A /* TaskOperation.h */,
+				78F618CF193B114E009DDC1A /* TaskOperation.m */,
+				78F618D0193B114E009DDC1A /* TaskOperationExecutor.h */,
+				78F618D1193B114E009DDC1A /* TaskOperationExecutor.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		78ABDD30191B194D003D605F /* OperatorDemo */ = {
+		78ABDD30191B194D003D605F /* CancelableOperator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78ABDD66191B194D003D605F /* Build configuration list for PBXNativeTarget "OperatorDemo" */;
+			buildConfigurationList = 78ABDD66191B194D003D605F /* Build configuration list for PBXNativeTarget "CancelableOperator" */;
 			buildPhases = (
 				78ABDD2D191B194D003D605F /* Sources */,
 				78ABDD2E191B194D003D605F /* Frameworks */,
@@ -170,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = OperatorDemo;
+			name = CancelableOperator;
 			productName = OperatorDemo;
-			productReference = 78ABDD31191B194D003D605F /* OperatorDemo.app */;
+			productReference = 78ABDD31191B194D003D605F /* CancelableOperator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		78ABDD54191B194D003D605F /* OperatorDemoTests */ = {
+		78ABDD54191B194D003D605F /* CancelableOperatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78ABDD69191B194D003D605F /* Build configuration list for PBXNativeTarget "OperatorDemoTests" */;
+			buildConfigurationList = 78ABDD69191B194D003D605F /* Build configuration list for PBXNativeTarget "CancelableOperatorTests" */;
 			buildPhases = (
 				78ABDD51191B194D003D605F /* Sources */,
 				78ABDD52191B194D003D605F /* Frameworks */,
@@ -188,9 +208,9 @@
 			dependencies = (
 				78ABDD5B191B194D003D605F /* PBXTargetDependency */,
 			);
-			name = OperatorDemoTests;
+			name = CancelableOperatorTests;
 			productName = OperatorDemoTests;
-			productReference = 78ABDD55191B194D003D605F /* OperatorDemoTests.xctest */;
+			productReference = 78ABDD55191B194D003D605F /* CancelableOperatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 78ABDD2C191B194D003D605F /* Build configuration list for PBXProject "OperatorDemo" */;
+			buildConfigurationList = 78ABDD2C191B194D003D605F /* Build configuration list for PBXProject "CancelableOperator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				78ABDD30191B194D003D605F /* OperatorDemo */,
-				78ABDD54191B194D003D605F /* OperatorDemoTests */,
+				78ABDD30191B194D003D605F /* CancelableOperator */,
+				78ABDD54191B194D003D605F /* CancelableOperatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ABDD4B191B194D003D605F /* Main_iPad.storyboard in Resources */,
 				78ABDD50191B194D003D605F /* Images.xcassets in Resources */,
 				78ABDD48191B194D003D605F /* Main_iPhone.storyboard in Resources */,
 				78ABDD3F191B194D003D605F /* InfoPlist.strings in Resources */,
@@ -253,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F618D3193B114E009DDC1A /* TaskOperation.m in Sources */,
 				78ABDD4E191B194D003D605F /* ViewController.m in Sources */,
 				78ABDD45191B194D003D605F /* AppDelegate.m in Sources */,
+				78F618D2193B114E009DDC1A /* TaskManager.m in Sources */,
 				78ABDD41191B194D003D605F /* main.m in Sources */,
+				78F618D4193B114E009DDC1A /* TaskOperationExecutor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +294,7 @@
 /* Begin PBXTargetDependency section */
 		78ABDD5B191B194D003D605F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 78ABDD30191B194D003D605F /* OperatorDemo */;
+			target = 78ABDD30191B194D003D605F /* CancelableOperator */;
 			targetProxy = 78ABDD5A191B194D003D605F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -292,14 +314,6 @@
 				78ABDD47191B194D003D605F /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		78ABDD49191B194D003D605F /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78ABDD4A191B194D003D605F /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		78ABDD5F191B194D003D605F /* InfoPlist.strings */ = {
@@ -390,10 +404,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OperatorDemo/OperatorDemo-Prefix.pch";
-				INFOPLIST_FILE = "OperatorDemo/OperatorDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "OperatorDemo/CancelableOperator-Prefix.pch";
+				INFOPLIST_FILE = "OperatorDemo/CancelableOperator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = CancelableOperator;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,10 +420,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OperatorDemo/OperatorDemo-Prefix.pch";
-				INFOPLIST_FILE = "OperatorDemo/OperatorDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "OperatorDemo/CancelableOperator-Prefix.pch";
+				INFOPLIST_FILE = "OperatorDemo/CancelableOperator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = CancelableOperator;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -426,8 +446,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "OperatorDemoTests/OperatorDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "OperatorDemoTests/CancelableOperatorTests-Info.plist";
+				PRODUCT_NAME = CancelableOperatorTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -444,8 +464,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OperatorDemo/OperatorDemo-Prefix.pch";
-				INFOPLIST_FILE = "OperatorDemoTests/OperatorDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "OperatorDemoTests/CancelableOperatorTests-Info.plist";
+				PRODUCT_NAME = CancelableOperatorTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -454,7 +474,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		78ABDD2C191B194D003D605F /* Build configuration list for PBXProject "OperatorDemo" */ = {
+		78ABDD2C191B194D003D605F /* Build configuration list for PBXProject "CancelableOperator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78ABDD64191B194D003D605F /* Debug */,
@@ -463,21 +483,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78ABDD66191B194D003D605F /* Build configuration list for PBXNativeTarget "OperatorDemo" */ = {
+		78ABDD66191B194D003D605F /* Build configuration list for PBXNativeTarget "CancelableOperator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78ABDD67191B194D003D605F /* Debug */,
 				78ABDD68191B194D003D605F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		78ABDD69191B194D003D605F /* Build configuration list for PBXNativeTarget "OperatorDemoTests" */ = {
+		78ABDD69191B194D003D605F /* Build configuration list for PBXNativeTarget "CancelableOperatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78ABDD6A191B194D003D605F /* Debug */,
 				78ABDD6B191B194D003D605F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

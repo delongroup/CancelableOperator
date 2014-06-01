@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TaskManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    TaskManager *taskManager = [[TaskManager alloc] init];
+    TaskOperation *operation = [taskManager executeWithCompletion:^(BOOL finished, NSError *error) {
+        NSLog(@"finished");
+    }];
+    
+    operation.progressBlock = ^(NSString *title, CGFloat progress, NSDictionary *params){
+        NSLog(@"%@",title);
+        self.title = title;
+        [operation cancel];
+    };
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

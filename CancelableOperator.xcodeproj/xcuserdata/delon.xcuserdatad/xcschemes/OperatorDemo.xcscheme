@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "78ABDD30191B194D003D605F"
                BuildableName = "OperatorDemo.app"
-               BlueprintName = "OperatorDemo"
-               ReferencedContainer = "container:OperatorDemo.xcodeproj">
+               BlueprintName = "CancelableOperator"
+               ReferencedContainer = "container:CancelableOperator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "78ABDD54191B194D003D605F"
                BuildableName = "OperatorDemoTests.xctest"
-               BlueprintName = "OperatorDemoTests"
-               ReferencedContainer = "container:OperatorDemo.xcodeproj">
+               BlueprintName = "CancelableOperatorTests"
+               ReferencedContainer = "container:CancelableOperator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78ABDD30191B194D003D605F"
             BuildableName = "OperatorDemo.app"
-            BlueprintName = "OperatorDemo"
-            ReferencedContainer = "container:OperatorDemo.xcodeproj">
+            BlueprintName = "CancelableOperator"
+            ReferencedContainer = "container:CancelableOperator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78ABDD30191B194D003D605F"
             BuildableName = "OperatorDemo.app"
-            BlueprintName = "OperatorDemo"
-            ReferencedContainer = "container:OperatorDemo.xcodeproj">
+            BlueprintName = "CancelableOperator"
+            ReferencedContainer = "container:CancelableOperator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78ABDD30191B194D003D605F"
             BuildableName = "OperatorDemo.app"
-            BlueprintName = "OperatorDemo"
-            ReferencedContainer = "container:OperatorDemo.xcodeproj">
+            BlueprintName = "CancelableOperator"
+            ReferencedContainer = "container:CancelableOperator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
