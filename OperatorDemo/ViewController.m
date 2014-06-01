@@ -26,7 +26,6 @@
     
     operation.progressBlock = ^(NSString *title, CGFloat progress, NSDictionary *params){
         NSLog(@"%@",title);
-        self.title = title;
         [operation cancel];
     };
     
